@@ -4,7 +4,7 @@
 
 // Initialize a single static instance of all of your subsystems to NULL
 Shooter* shooter = NULL;
-Shoot* shoot = NULL;
+OI* oi = NULL;
 
 
 CommandBase::CommandBase(const std::string &name) :

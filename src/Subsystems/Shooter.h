@@ -22,6 +22,7 @@ public:
 	float fIntakeSpeed;
 	float fShootSpeed;
 	float fKickerSpeed;
+	float fRegressionSpeed;
 
 	void Intake(float speed);
 	void Shoot(float speed);

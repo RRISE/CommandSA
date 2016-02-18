@@ -82,6 +82,7 @@ private:
 	void Log(){
 		SmartDashboard::PutNumber("Displacement Graph", CommandBase::shooter->GetUltraAt(ULTRASONIC_FRONT_ANIPORT));
 		SmartDashboard::PutNumber("Displacement", CommandBase::shooter->GetUltraAt(ULTRASONIC_FRONT_ANIPORT));
+		SmartDashboard::PutNumber("Regression Speed", CommandBase::shooter->fRegressionSpeed);
 	}
 };
 

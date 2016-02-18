@@ -14,7 +14,8 @@ Subsystem("Shooter")
 	prefs = Preferences::GetInstance();
 	fShootSpeed = prefs->GetFloat("ShootSpeed", 0.0f);
 	fIntakeSpeed = prefs->GetFloat("IntakeSpeed", 0.0f);
-	fKickerSpeed =prefs->GetFloat("KickerSpeed", 0.0f);
+	fKickerSpeed = prefs->GetFloat("KickerSpeed", 0.0f);
+	fRegressionSpeed = 0.0;
 
 	limitSwitch = new DigitalInput(9);
 	counter = new Counter(limitSwitch);
@@ -75,6 +76,8 @@ float Shooter::GetShootSpeed_R(){
 		std::string prefsKey = oss.str();
 		output = output + prefs->GetFloat(prefsKey, 0.0) * pow(displacement, i);
 	}
+
+	fRegressionSpeed = output;
 	return output;
 }
 
