@@ -1,5 +1,4 @@
 #include "CommandBase.h"
-#include "Subsystems/Shooter.h"
 #include "Commands/Scheduler.h"
 
 // Initialize a single static instance of all of your subsystems to NULL

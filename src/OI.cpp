@@ -1,6 +1,7 @@
 #include "OI.h"
 #include "Commands/Shoot.h"
 #include "Commands/RegressionShoot.h"
+#include "RobotMap.h"
 
 OI::OI()
 {

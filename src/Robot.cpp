@@ -1,6 +1,8 @@
 #include "WPILib.h"
 #include "Commands/Command.h"
 #include "CommandBase.h"
+#include "RobotMap.h"
+
 
 class Robot: public IterativeRobot
 {
